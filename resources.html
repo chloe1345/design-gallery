@@ -1018,14 +1018,14 @@ function IconPanel({ showToast }) {
 ═══════════════════════════════════════════════════════════════════ */
 
 const TABS = [
-  { id: 'color', label: 'Color' },
   { id: 'chart', label: 'Chart' },
   { id: 'font',  label: 'Font'  },
   { id: 'icon',  label: 'Icon'  },
+  { id: 'color', label: 'Color' },
 ];
 
 function ResourcesPage() {
-  const [activeTab,       setActiveTab]       = React.useState('color');
+  const [activeTab,       setActiveTab]       = React.useState('chart');
   const [familySiteOpen,  setFamilySiteOpen]  = React.useState(false);
   const [toast,           setToast]           = React.useState(null);
 

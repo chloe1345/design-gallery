@@ -32,7 +32,7 @@
 
     function BxdiMainPagePrototype() {
       const [familySiteOpen, setFamilySiteOpen] = React.useState(false);
-      const [activeResourceTab, setActiveResourceTab] = React.useState('Color');
+      const [activeResourceTab, setActiveResourceTab] = React.useState('Chart');
       const galleryItems = [
         { id: 1, title: '은행 경영성과 종합보고서 P&L',  industry: '공공·금융',  screenType: 'Reporting', image: 'images/templates/template-1.png' },
         { id: 2, title: '개발 단계별 프로세스',           industry: '제조·유통',  screenType: 'EPA',       image: 'images/templates/template-2.png' },
@@ -180,7 +180,7 @@
 
             {/* Tab Navigation */}
             <div style={{display:'flex', borderBottom:'1px solid rgba(255,255,255,0.08)', marginBottom:'28px'}}>
-              {['Color','Chart','Font','Icon'].map(tab => (
+              {['Chart','Font','Icon','Color'].map(tab => (
                 <button key={tab} onClick={() => setActiveResourceTab(tab)} style={{
                   padding:'12px 28px', fontSize:'15px', fontWeight:'500',
                   fontFamily:'Pretendard, sans-serif',
